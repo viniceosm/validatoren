@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Validatoren</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+	<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+	<div id="app">
+		<template>
+			<div class="title">Validatoren</div>
+			<div class="ainput">
+				<input class="input" v-model="text" placeholder="Enter text" v-on:keyup="validate" autofocus />
+
+				<div id="res">{{resultado}}</div>
+			</div>
+		</template>
+	</div>
+
+	<script src="index.js"></script>
+</body>
